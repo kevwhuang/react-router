@@ -1,0 +1,141 @@
+.about {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.about p {
+    color: gray;
+    margin: 1rem 0;
+}
+
+.cards div {
+    float: left;
+    padding: 1rem;
+    padding-bottom: 0;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.cards h6 {
+    margin-bottom: .5rem;
+}
+
+.cards li {
+    text-align: center;
+}
+
+.cards ul {
+    list-style-type: none;
+    margin-bottom: .5rem;
+}
+
+.details {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.details h2 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.details li {
+    font-size: 2rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+.details-link {
+    color: blue;
+}
+
+.details-link:visited {
+    color: blue;
+}
+
+.details-link:active {
+    color: crimson;
+}
+
+.error {
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.nav-link:visited {
+    color: white;
+}
+
+.nav-link:hover {
+    color: rgb(250, 100, 250);
+}
+
+.nav-link:active {
+    color: crimson;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .cards div {
+        width: calc(100% / 2);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .about {
+        width: 80%;
+    }
+
+    .cards div {
+        width: 100%;
+    }
+
+    .details h2 {
+        font-size: 2rem;
+    }
+
+    .details li {
+        font-size: 1rem;
+    }
+
+    .error {
+        font-size: 2rem;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .navbar {
+        margin: auto;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .details h2 {
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,1 @@
+Run `npm i` then `npm start` to preview the production.

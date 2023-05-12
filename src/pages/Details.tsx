@@ -1,4 +1,5 @@
 import { useSearchParams } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
 
 import data from '../data/data.json';
 
@@ -21,8 +22,8 @@ export default function () {
     return (
         <div className="details">
             <h2>{name}</h2>
-            {Object.keys(fields).map((key, i) => (
-                <ul key={i}>
+            {Object.keys(fields).map(key => (
+                <ul key={uuid()}>
                     <li>{key}: {fields[key]}</li>
                 </ul>
             ))}

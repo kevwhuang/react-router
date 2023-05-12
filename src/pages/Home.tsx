@@ -1,15 +1,16 @@
 import { NavLink } from 'react-router-dom';
+import { v4 as uuid } from 'uuid';
 
 import data from '../data/data.json';
 
 export default function () {
     return (
         <div className="cards">
-            {data.map((car, i) => {
+            {data.map(car => {
                 const path = `details?id=${car.id}`;
 
                 return (
-                    <div key={i}>
+                    <div key={uuid()}>
                         <h6>{car['Name'].toUpperCase()}</h6>
                         <ul>
                             <li>Horsepower: {car['Horsepower']}</li>

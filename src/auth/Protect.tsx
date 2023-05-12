@@ -17,7 +17,7 @@ function checkAuth() {
     if (cookies['loggedIn']) {
         return true;
     } else {
-        const code: any = prompt('Please enter access code.', '12345');
+        const code: any = prompt('Please enter the access code.', '12345');
         const ms: number = 24 * 60 * 60 * 1000;
 
         if (code === '12345') {

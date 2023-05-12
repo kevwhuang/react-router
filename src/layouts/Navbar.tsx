@@ -1,11 +1,13 @@
 import React from 'react';
+import cookie from 'cookie';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import { Link, Outlet } from 'react-router-dom';
 
 export const LoginContext: any = React.createContext(null);
 
 export default function Navbar() {
-    const [isLoggedIn, setIsLoggedIn]: [boolean, Function] = React.useState(false);
+    const [isLoggedIn, setIsLoggedIn]: [boolean, Function]
+        = React.useState(cookie.parse(document.cookie)['loggedIn'] ? true : false);
 
     return (
         <LoginContext.Provider value={{ setIsLoggedIn }}>
